@@ -1,0 +1,22 @@
+title "Ex 0.6"
+
+note over browser
+add text in box
+when submit is clinked,
+a new note is created
+and added to the list 
+of notes
+end note
+
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server
+
+end note 
+
+server-->browser: Status 201 : note created 
+
+note over browser
+list updated
+end note
